@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Garden Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #080808;
+            color: #eeeeee;
+        }
+        .app-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        h1 { font-size: 24px; font-weight: 700; margin: 0; color: #f3f3f8; }
+        .auth-link { color: #81c784; text-decoration: none; font-weight: 600; font-size: 15px; }
+        
+        .search-container {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 12px 16px;
+            background-color: #1e1e1e;
+            border: 1px solid #2c2c2c;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 15px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-bar:focus {
+            border-color: #81c784;
+        }
+
+        .section-title { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #a1a1a6; margin: 20px 0 10px 0; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 16px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:active { transform: scale(0.98); }
+        .plant-thumb {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .plant-name { font-size: 16px; font-weight: 600; margin-bottom: 4px; color: #fff; }
+        .plant-meta { font-size: 13px; color: #a1a1a6; margin-bottom: 8px; }
+        .plant-details { font-size: 12px; color: #81c784; background: #152b1e; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-top: 4px; }
+        
+        .empty-state {
+            background-color: #121212;
+            border: 2px dashed #2c2c2c;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            color: #a1a1a6;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            {% if username %}
+                <div>
+                    <h1>my greenhouse</h1>
+                    <div style="font-size: 14px; color: #a1a1a6; margin-top: 4px;">
+                        Logged in as <strong>{{ username }}</strong> | 
+                        <a href="/logout" style="color: #ff6b6b; text-decoration: none;">Logout</a>
+                        <form action="/delete-account" method="POST" onsubmit="return confirm('Are you absolutely sure you want to permanently delete your account and all saved plants? This cannot be undone.');" style="display:inline;">
+                            <button type="submit" style="background: none; border: none; color: #ff6b6b; cursor: pointer; font-weight: 600; text-decoration: underline; font-size: 14px; margin-left: 15px;">
+                                Delete Account
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            {% else %}
+                <h1>Meemaw's Greenhouse</h1>
+                <a href="/login" class="auth-link">Sign In / Join</a>
+            {% endif %}
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-bar" placeholder="🔍 Search plants by name or environment..." onkeyup="filterPlants()">
+        </div>
+
+        {% if show_success %}
+            <div style="background-color: #1b5e20; color: #c8e6c9; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; font-weight: 600;">
+                🎉 Account created successfully! Welcome to your personal garden tracker.
+            </div>
+        {% endif %}
+
+        {% if username %}
+            <div class="section-title">My Personal Garden</div>
+            {% if user_plants %}
+                <div class="grid">
+                    {% for plant in user_plants %}
+                        <a href="/plant/{{ plant.id }}" class="card">
+                            <div>
+                                <img src="/static/images/{{ plant.id }}.jpg" alt="{{ plant.name }}" class="plant-thumb">
+                                <div class="plant-name">{{ plant.name }}</div>
+                                <div class="plant-meta">🔬 {{ plant.common_names[0] if plant.common_names else 'No common name' }}</div>
+                                <div class="plant-details">☀️ {{ plant.light_requirements.intensity if plant.light_requirements else 'See details' }}</div>
+                                <div class="plant-details">🏡 {{ plant.environment }}</div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state">
+                    <p style="margin: 0 0 10px 0;">Your garden is empty.</p>
+                    <span style="font-size: 13px; color: #81c784;">Select a plant from the catalog below to add it!</span>
+                </div>
+            {% endif %}
+        {% endif %}
+
+        <div class="section-title">Explore Plant Catalog</div>
+        <div class="grid">
+            {% for plant in plants %}
+                <a href="/plant/{{ plant.id }}" class="card">
+                    <div>
+                        <img src="/static/images/{{ plant.id }}.jpg" alt="{{ plant.name }}" class="plant-thumb">
+                        <div class="plant-name">{{ plant.name }}</div>
+                        
+                        <div class="plant-meta" style="color: #81c784; font-style: italic; margin-bottom: 4px;">
+                            💡 {{ plant.common_names[0] if plant.common_names else '' }}
+                        </div>
+                        
+                        <div class="plant-meta">{{ plant.environment }} • {{ plant.light_requirements.intensity if plant.light_requirements else 'See Details' }}</div>
+                    </div>
+                    <div style="font-size: 13px; color: #81c784; margin-top: 8px; text-align: right; font-weight: 600;">View →</div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        function filterPlants() {
+            let input = document.getElementById('search-input').value.toLowerCase();
+            let cards = document.querySelectorAll('.grid .card');
+
+            cards.forEach((card) => {
+                // 1. Grab all text content inside the card (Name, Common Name, Meta info)
+                let cardText = card.innerText.toLowerCase();
+                
+                // 2. Check if what the user typed matches ANY text inside the card
+                if (cardText.includes(input)) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

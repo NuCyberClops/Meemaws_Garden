@@ -1,0 +1,8 @@
+{
+    "short_name": "Planter",
+    "name": "Home Planter App",
+    "start_url": "/",
+    "background_color": "#f5f5f7",
+    "display": "standalone",
+    "theme_color": "#2c3e50"
+}

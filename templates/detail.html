@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>{{ plant.name }} - Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #080808;
+            color: #eeeeee;
+        }
+        .app-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #81c784;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        h1 { font-size: 28px; margin: 0 0 4px 0; color: #f3f3f8; }
+        .scientific-name { font-size: 16px; font-style: italic; color: #a1a1a6; margin-bottom: 20px; }
+        .card {
+            background: #1e1e1e;
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .card-title { font-size: 18px; font-weight: 600; color: #81c784; margin: 0 0 10px 0; }
+        .card-desc { font-size: 15px; color: #e1e1e6; line-height: 1.5; margin: 0 0 10px 0; }
+        .action-btn {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .btn-add { background: #81c784; color: #121212; }
+        .btn-owned { background: #2c2c2e; color: #a1a1a6; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <a href="/" class="back-btn">← Back to Garden</a>
+        <img src="/static/images/{{ plant.id }}.jpg" alt="{{ plant.name }}" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
+        <h1>{{ plant.name }}</h1>
+        <div class="scientific-name">Also known as: {{ plant.common_names | join(", ") }}</div>
+
+        {% if username %}
+            {% if is_owned %}
+                <button class="action-btn btn-owned" disabled style="margin-bottom: 8px;">✓ Added to Your Garden</button>
+                <form action="/delete-from-garden/{{ plant.id }}" method="POST">
+                    <button type="submit" class="action-btn" style="background: #ff6b6b; color: #121212; font-weight: 600;">🗑 Remove from My Garden</button>
+                </form>
+            {% else %}
+                <form action="/add-to-garden/{{ plant.id }}" method="POST">
+                    <button type="submit" class="action-btn btn-add">＋ Add to My Garden</button>
+                </form>
+            {% endif %}
+        {% else %}
+            <a href="/login" class="action-btn btn-add" style="display: block; text-align: center; text-decoration: none; box-sizing: border-box;">Log in to track this plant</a>
+        {% endif %}
+
+        <div class="card">
+            <p class="card-title">🌿 Overview</p>
+            <p class="card-desc"><strong>Description:</strong> {{ plant.detailed_description }}</p>
+            <p class="card-desc"><strong>Environment:</strong> {{ plant.environment }}</p>
+            
+            {% if plant.light_requirements %}
+                <p class="card-desc"><strong>Sunlight Intensity:</strong> {{ plant.light_requirements.intensity }}</p>
+                {% if plant.light_requirements.notes %}
+                    <p class="card-desc"><strong>Light Notes:</strong> {{ plant.light_requirements.notes }}</p>
+                {% endif %}
+            {% endif %}
+            
+            {% if plant.clipping_guide %}
+                <p class="card-desc"><strong>Clipping Guide:</strong> {{ plant.clipping_guide }}</p>
+            {% endif %}
+            
+            {% if plant.origin %}
+                <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
+                <p class="card-desc"><strong>Origin Region:</strong> {{ plant.origin.native_region }}</p>
+                {% if plant.origin.countries %}
+                    <p class="card-desc"><strong>Countries Found In:</strong> {{ plant.origin.countries | join(", ") }}</p>
+                {% endif %}
+            {% endif %}
+            
+            <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
+            
+            {% if plant.pet_hazards %}
+                <p class="card-desc">
+                    <strong>Pet Toxicity:</strong> 
+                    {% if plant.pet_hazards.toxic_to_cats or plant.pet_hazards.toxic_to_dogs %}
+                        ⚠️ Toxic to Pets
+                    {% else %}
+                        ✅ Safe for Pets
+                    {% endif %}
+                </p>
+                {% if plant.pet_hazards.clinical_signs %}
+                    <p class="card-desc"><strong>Toxicity Symptoms:</strong> {{ plant.pet_hazards.clinical_signs }}</p>
+                {% endif %}
+            {% endif %}
+        </div>
+
+        <div class="card">
+            <p class="card-title">💧 Watering Care & Calendar</p>
+            {% if plant.watering_schedule %}
+                <p class="card-desc"><strong>Frequency:</strong> {{ plant.watering_schedule.frequency }}</p>
+                {% if plant.watering_schedule.notes %}
+                    <p class="card-desc"><strong>Instructions:</strong> {{ plant.watering_schedule.notes }}</p>
+                {% endif %}
+            {% endif %}
+            
+            {% if is_owned %}
+                <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
+                <div style="background: #2c2c2e; padding: 14px; border-radius: 8px;">
+                    <label for="last-watered" style="display: block; font-size: 14px; margin-bottom: 8px; color: #a1a1a6;">
+                        📅 When did you last water this plant?
+                    </label>
+                    <input type="date" id="last-watered" style="width: 100%; padding: 10px; border-radius: 6px; border: none; background: #1c1c1e; color: #fff; box-sizing: border-box; margin-bottom: 12px; font-size: 15px;">
+                    
+                    <button id="notify-btn" style="width: 100%; padding: 10px; border-radius: 6px; border: none; background: #81c784; color: #121212; font-weight: 600; cursor: pointer;">
+                        Set Watering Reminder
+                    </button>
+                    <p id="reminder-status" style="margin: 10px 0 0 0; font-size: 13px; color: #ffd700; display: none;"></p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        const notifyBtn = document.getElementById('notify-btn');
+        const lastWateredInput = document.getElementById('last-watered');
+        const reminderStatus = document.getElementById('reminder-status');
+        const plantId = "{{ plant.id }}";
+        
+        const wateringDaysInterval = plantId === "PLN-001" ? 10 : 7; 
+
+        const savedDate = localStorage.getItem(`last_watered_${plantId}`);
+        if (savedDate && lastWateredInput) {
+            lastWateredInput.value = savedDate;
+            updateStatusText(savedDate);
+        }
+
+        if (notifyBtn) {
+            notifyBtn.addEventListener('click', () => {
+                const selectedDate = lastWateredInput.value;
+                if (!selectedDate) {
+                    alert("Please pick a valid calendar date first!");
+                    return;
+                }
+
+                Notification.requestPermission().then(permission => {
+                    if (permission == "granted") {
+                        localStorage.setItem(`last_watered_${plantId}`, selectedDate);
+                        updateStatusText(selectedDate);
+                        
+                        new Notification("🌿 Reminder Set!", {
+                            body: `We will ping your device when your ${document.querySelector('h1').innerText} needs water next.`
+                        });
+                    } else {
+                        alert("Please enable notification permissions in your browser settings to get alerts!");
+                    }
+                });
+            });
+        }
+
+        function updateStatusText(dateStr) {
+            const lastDate = new Date(dateStr);
+            const nextDate = new Date(lastDate);
+            nextDate.setDate(lastDate.getDate() + wateringDaysInterval);
+            
+            reminderStatus.style.display = "block";
+            reminderStatus.innerText = `⏰ Last log saved! Next watering estimated: ${nextDate.toLocaleDateString()}`;
+        }
+    </script>
+</body>
+</html>

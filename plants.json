@@ -1,0 +1,688 @@
+[
+    {
+        "id": "PLN-001",
+        "name": "Monstera Deliciosa",
+        "common_names": [
+            "Swiss Cheese Plant",
+            "Split-leaf Philodendron"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A striking tropical plant famous for its iconic leaf fenestrations (holes) and vibrant jungle aesthetic.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Allow soil to dry out completely between waterings."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Direct sunlight will scorch the leaves."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cut a healthy stem just below an aerial root node. Submerge the node in a jar of water or press it into moist soil. Roots will appear in 2-4 weeks."
+    },
+    {
+        "id": "PLN-002",
+        "name": "Sansevieria Trifasciata",
+        "common_names": [
+            "Snake Plant",
+            "Mother-in-Law's Tongue"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "An incredibly hardy, low-maintenance plant with stiff, upright, sword-like leaves.",
+        "watering_schedule": {
+            "frequency": "Every 2-3 weeks",
+            "notes": "Thrives on neglect. Only water when the soil is completely bone-dry."
+        },
+        "light_requirements": {
+            "intensity": "Low to bright indirect",
+            "notes": "Extremely versatile; tolerates dark corners well."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cut a leaf into 3-inch V-shaped segments (ensure you remember which way is up). Place the bottom edge in water or well-draining soil until roots establish."
+    },
+    {
+        "id": "PLN-003",
+        "name": "Epipremnum Aureum",
+        "common_names": [
+            "Golden Pothos",
+            "Devil's Ivy"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A fast-growing, cascading vine displaying heart-shaped leaves with beautiful golden-yellow variegation.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Water when the top 2 inches of soil feel dry. Leaves will droop slightly when thirsty."
+        },
+        "light_requirements": {
+            "intensity": "Medium indirect light",
+            "notes": "Can survive in low light, but leaves may lose their golden variegation."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Snip a section of vine containing 3-4 leaves. Pull off the lowest leaf to expose a node, then submerge that node in water. It roots incredibly fast."
+    },
+    {
+        "id": "PLN-004",
+        "name": "Chlorophytum Comosum",
+        "common_names": [
+            "Spider Plant",
+            "Ribbon Plant"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "An adaptable, fountain-like plant featuring narrow arching leaves and small trailing plantlets.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Prefers consistently moist but well-draining soil. Susceptible to root rot if overwatered."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Avoid harsh midday sun, which bleaches the foliage."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Look for the small baby 'spiderettes' dangling from the mother plant. Snip them off at the runner stem and set their bottom base directly into moist soil or water."
+    },
+    {
+        "id": "PLN-005",
+        "name": "Spathiphyllum",
+        "common_names": [
+            "Peace Lily"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "Elegant dark green foliage offset by dramatic, pure white sail-shaped flower bracts.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Keep soil evenly moist. Will dramatically collapse its leaves when dry but bounces back quickly after watering."
+        },
+        "light_requirements": {
+            "intensity": "Low to medium indirect",
+            "notes": "A classic low-light plant. Higher indirect light encourages more frequent blooming."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Peace Lilies grow out of a central clump and cannot be propagated by simple stem clippings. Propagate by carefully splitting the root ball into separate crowns during repotting."
+    },
+    {
+        "id": "PLN-006",
+        "name": "Zamioculcas Zamiifolia",
+        "common_names": [
+            "ZZ Plant",
+            "Zanzibar Gem"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "Features shiny, leather-textured oval leaflets sprouting gracefully along thick succulent-like stems.",
+        "watering_schedule": {
+            "frequency": "Every 3-4 weeks",
+            "notes": "Store water in its underground rhizomes. Water very sparingly; overwatering causes immediate stem collapse."
+        },
+        "light_requirements": {
+            "intensity": "Low to bright indirect",
+            "notes": "Handles dark offices or fluorescent tube lighting brilliantly."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cut a mature stalk off at the base and place it in water. Alternatively, individual leaf stems can be pushed into soil to slowly grow a new tuber over several months."
+    },
+    {
+        "id": "PLN-007",
+        "name": "Ficus Lyrata",
+        "common_names": [
+            "Fiddle Leaf Fig"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A bold, structural statement plant with large, violin-shaped, heavily textured deep green leaves.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Water thoroughly once the top few inches dry out. Prone to brown spots if watering is inconsistent."
+        },
+        "light_requirements": {
+            "intensity": "Bright consistent indirect",
+            "notes": "Requires a very bright window. Rotate every few weeks to keep growth upright and even."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cut a 6-inch branch tip cleanly just below a leaf node. Remove lower leaves, apply rooting hormone if available, and root in moist perlite or water under a plastic humidity tent."
+    },
+    {
+        "id": "PLN-008",
+        "name": "Aloe Barbadensis Miller",
+        "common_names": [
+            "Aloe Vera",
+            "Medicinal Aloe"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A stemless succulent with thick, fleshy, rosette-arranged green leaves filled with a soothing, healing medicinal gel.",
+        "watering_schedule": {
+            "frequency": "Every 3 weeks",
+            "notes": "Water deeply, then allow the pot to drain and completely dry out. Reduce watering to once a month in winter."
+        },
+        "light_requirements": {
+            "intensity": "Bright direct sunlight",
+            "notes": "Requires a bright sunny window sill to prevent the thick leaves from stretching out or drooping."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Propagates via 'pups'—small baby clones that shoot up near the base of the mother plant. Slice them away from the main root system with a clean knife once they are 3 inches tall."
+    },
+    {
+        "id": "PLN-009",
+        "name": "Crassula Ovata",
+        "common_names": [
+            "Jade Plant",
+            "Money Tree"
+        ],
+        "environment": "Indoor/Outdoor",
+        "detailed_description": "A miniature tree-like succulent with thick woody stems and teardrop-shaped jade green leaves.",
+        "watering_schedule": {
+            "frequency": "Every 2-3 weeks",
+            "notes": "Leaves will look plump when hydrated and start to slightly wrinkle when the plant needs water."
+        },
+        "light_requirements": {
+            "intensity": "Bright direct sunlight",
+            "notes": "Needs at least 4-6 hours of sunshine. Leaves can develop a beautiful red border in full sun."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Take a 3-5 inch stem cutting and strip the lowest leaves. Let the cut tip heal and calloused over for 3 days, then push it directly into dry succulent soil."
+    },
+    {
+        "id": "PLN-010",
+        "name": "Calathea Orbifolia",
+        "common_names": [
+            "Peacock Plant",
+            "Orbifolia Prayer Plant"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A stunning, highly stylized foliage plant boasting large round leaves decorated with metallic-looking silvery-green stripes.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Extremely picky. Requires distilled or rainwater to keep soil evenly moist; tap water minerals will turn margins brown."
+        },
+        "light_requirements": {
+            "intensity": "Medium indirect light",
+            "notes": "Sensitive to changes. Too much light fades the striking silver leaf patterns."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Propagate by division. When the plant becomes root-bound, gently pull the underlying rhizome bundles apart into separate pots during springtime repotting."
+    },
+    {
+        "id": "PLN-011",
+        "name": "Peperomia Obtusifolia",
+        "common_names": [
+            "Baby Rubber Plant",
+            "Pepper Face"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A dense, bushy plant featuring thick, waxy evergreen leaves growing along upright semi-succulent stems.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Highly resilient. The leaves hold water, so it prefers drying out slightly rather than sitting in damp mud."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Tolerates medium or low artificial office light settings gracefully."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Cut off a 4-inch stem with a few leaves attached. Pop the cutting straight into a vase of water or moist potting mix. Roots establish within 10 days."
+    },
+    {
+        "id": "PLN-012",
+        "name": "Hedera Helix",
+        "common_names": [
+            "English Ivy",
+            "Common Ivy"
+        ],
+        "environment": "Indoor/Outdoor",
+        "detailed_description": "An aggressive climbing or cascading woody vine with lobed, classic dark green leaves.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Enjoys thorough watering, but likes the top surface to dry out before its next drink."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect to direct",
+            "notes": "Requires bright light when indoors to prevent the growth from becoming stringy or sparse."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Snip a section of trailing vine with 4-5 leaf nodes. Strip the lower leaves and submerge the stem in water. Tiny white root tendrils will sprout along the vine quickly."
+    },
+    {
+        "id": "PLN-013",
+        "name": "Ficus Elastica",
+        "common_names": [
+            "Rubber Tree",
+            "Burgundy Rubber Plant"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A dramatic indoor tree showcasing oversized, glossy, leathery leaves with a deep burgundy tint.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Keep moist during summer growing months, but drop back significantly during colder winter cycles."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Can survive in medium light, but needs bright conditions to retain its intense burgundy color."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Take a tip clipping with a few nodes. Note: The plant bleeds a sticky white sap when cut, so wear gloves. Wipe the sap away, dip in water, and allow roots to grow out."
+    },
+    {
+        "id": "PLN-014",
+        "name": "Tradescantia Zebrina",
+        "common_names": [
+            "Inch Plant",
+            "Wandering Dude"
+        ],
+        "environment": "Indoor/Outdoor",
+        "detailed_description": "An incredibly fast-growing trailer highlighting zebra-striped leaves with olive green, silver, and deep purple colors.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Prefers consistent moisture but can survive short periods of dryness."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Needs strong indirect light to maintain its iridescent purple coloration."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Simply pinch off any leggy stem terminal with your fingers and push the broken bottom end straight into moist potting soil. It will root and grow almost instantly."
+    },
+    {
+        "id": "PLN-015",
+        "name": "Dypsis Lutescens",
+        "common_names": [
+            "Areca Palm",
+            "Golden Cane Palm"
+        ],
+        "environment": "Indoor/Outdoor",
+        "detailed_description": "A lush, tropical feather-frond palm growing in dense bamboo-like clumps that filters indoor air exceptionally well.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Keep the root system lightly damp. Sensitive to standing water, so always clear out the catch saucer."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Thrives near windows with sheer curtains. Harsh direct rays will turn the fronds yellow."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Cannot be propagated by leaf or branch clippings. To multiply, wait until repotting and gently saw or split the main underground root cluster into two distinct plant crowns."
+    },
+    {
+        "id": "PLN-016",
+        "name": "Monstera Adansonii",
+        "common_names": [
+            "Swiss Cheese Vine",
+            "Five Holes Plant"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A charming trailing relative of the Deliciosa, displaying smaller, narrow heart-shaped leaves packed with natural oval holes.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Thrives when soil is kept lightly moist but never waterlogged."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Too little light will cause small leaves and long, leggy vines."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cut a vine section about a half-inch below a leaf node or brown aerial root node. Place the stem in water; it will rapidly grow a robust root network."
+    },
+    {
+        "id": "PLN-017",
+        "name": "Pilea Peperomioides",
+        "common_names": [
+            "Chinese Money Plant",
+            "UFO Plant",
+            "Pancake Plant"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A delightful, quirky plant featuring perfectly round, bright green leaves floating on long, delicate stems.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Allow the soil to almost dry out. The leaves will begin to slightly droop when it is thirsty."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Rotate the pot 90 degrees every week to prevent it from growing lopsided toward the light source."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "The plant naturally produces tiny baby 'pups' that sprout straight out of the soil around the main stem. Follow the pup's stem an inch into the soil, slice it cleanly away, and place it in water or fresh soil."
+    },
+    {
+        "id": "PLN-018",
+        "name": "Strelitzia Nicolai",
+        "common_names": [
+            "White Bird of Paradise"
+        ],
+        "environment": "Indoor/Outdoor",
+        "detailed_description": "A massive, dramatic structural plant featuring enormous, glossy, banana-like leaves that fan out gracefully.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Keep the soil consistently moist but well-draining during spring and summer."
+        },
+        "light_requirements": {
+            "intensity": "Bright direct to indirect light",
+            "notes": "Can handle direct morning sun. Leaves will naturally split as they age to allow wind to blow through."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cannot be propagated through single leaf or stem cuttings. It must be propagated by carefully separating underground root suckers or offsets from the main plant crown during repotting."
+    },
+    {
+        "id": "PLN-019",
+        "name": "Ficus Pumila",
+        "common_names": [
+            "Creeping Fig",
+            "Climbing Fig"
+        ],
+        "environment": "Indoor/Outdoor",
+        "detailed_description": "An enthusiastic, fast-growing vine with tiny, crinkled, heart-shaped dark green leaves that aggressively carpet walls or cascade from hanging baskets.",
+        "watering_schedule": {
+            "frequency": "Every 4-5 days",
+            "notes": "Very sensitive to drying out completely. Keep soil evenly and constantly moist."
+        },
+        "light_requirements": {
+            "intensity": "Medium to bright indirect",
+            "notes": "Prefers bright spaces but avoid intense direct scorching afternoon sun."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cut a 4-6 inch tip of healthy green stem. Remove the lowest leaves, insert into damp potting soil, and keep under a humid dome or clear plastic bag until rooted."
+    },
+    {
+        "id": "PLN-020",
+        "name": "Syngonium Podophyllum",
+        "common_names": [
+            "Arrowhead Plant",
+            "Goosefoot Vine"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "An adaptable, bushy plant featuring distinctive arrowhead-shaped leaves that transitions into a trailing vine as it matures.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Water thoroughly once the top inch of soil has dried out completely."
+        },
+        "light_requirements": {
+            "intensity": "Medium indirect light",
+            "notes": "Tolerates low light well, though colorful variegated varieties may slowly turn solid green."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Locate a mature vine section with visible root nodes. Cut just below a node and place the stem in water. Once roots are an inch long, transplant into potting mix."
+    },
+    {
+        "id": "PLN-021",
+        "name": "Maranta Leuconeura",
+        "common_names": [
+            "Red Prayer Plant",
+            "Herringbone Plant"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "Stunning oval leaves displaying vivid red veins and neon-green patches. Its leaves fold upwards together at night like hands in prayer.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Prefers lukewarm, purified water. Keep soil evenly moist but never soggy."
+        },
+        "light_requirements": {
+            "intensity": "Medium indirect light",
+            "notes": "Keep away from direct sun, which easily bleaches the intense patterns on the foliage."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Look closely at a stem to find where several stems meet at a distinct node 'joint'. Cut right below this joint and submerge the node in water to root."
+    },
+    {
+        "id": "PLN-022",
+        "name": "Asplenium Nidus",
+        "common_names": [
+            "Bird's Nest Fern"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A beautiful epiphytic fern sporting crinkled, apple-green, glossy fronds that emerge from a central fuzzy rosette resembling a bird's nest.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Water around the edges of the pot. Avoid pouring water directly into the center 'nest', which traps moisture and rots the plant."
+        },
+        "light_requirements": {
+            "intensity": "Medium indirect light",
+            "notes": "Thrives in humid environments like bathrooms with moderate window light."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Ferns do not grow from stem clippings and cannot be split easily. They propagate via microscopic spores on the undersides of mature fronds, which is difficult domestically. Best propagated commercially."
+    },
+    {
+        "id": "PLN-023",
+        "name": "Senecio Rowleyanus",
+        "common_names": [
+            "String of Pearls"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A unique, delicate succulent featuring long, cascading thread-like vines adorned with small, round, marble-shaped green leaves.",
+        "watering_schedule": {
+            "frequency": "Every 2 weeks",
+            "notes": "Highly susceptible to root rot. Only water when the pea-like spheres look slightly deflated or wrinkled."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect with some morning sun",
+            "notes": "Ensure the top crown of the pot gets ample light so the vines don't thin out."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cut a 4-inch strand. Lay the clipping flat across the top of damp succulent soil mix and press it down slightly. New roots will shoot directly out of the sides of the pearl nodes into the dirt."
+    },
+    {
+        "id": "PLN-024",
+        "name": "Begonia Maculata",
+        "common_names": [
+            "Polka Dot Begonia",
+            "Trout Begonia"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "An eye-catching cane-like plant boasting metallic silver polka dots on olive green leaves, contrasted by deep crimson-purple undersides.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Keep the soil lightly moist. Prone to powdery mildew if the leaves themselves get wet."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Needs ample indirect light to produce its small clusters of white flowers."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Take a cutting from a mature stem that includes at least two leaf nodes. Strip the lower leaf, place the bare node in clean water, and keep it in a warm, bright room."
+    },
+    {
+        "id": "PLN-025",
+        "name": "Philodendron Hederaceum",
+        "common_names": [
+            "Heartleaf Philodendron",
+            "Sweetheart Vine"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "One of the easiest, most reliable indoor climbers featuring trailing vines covered in graceful, dark green heart-shaped leaves.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Extremely forgiving. Allow the top half of the soil mix to dry out fully before re-watering."
+        },
+        "light_requirements": {
+            "intensity": "Low to bright indirect",
+            "notes": "Highly versatile. Can survive in dim rooms, though growth will slow dramatically."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Snip a 5-inch vine piece just beneath a leaf node. Strip off the lowest couple of leaves and place the stem in water. It roots reliably within two weeks."
+    },
+    {
+        "id": "PLN-026",
+        "name": "Pachira Aquatica",
+        "common_names": [
+            "Money Tree",
+            "Guiana Chestnut"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "Features a slender, braided woody trunk topped by an umbrella-like canopy of bright green, hand-shaped leaflets.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Water thoroughly until it drains out, then let dry. Avoid letting the base sit in stagnant runoff water."
+        },
+        "light_requirements": {
+            "intensity": "Medium to bright indirect",
+            "notes": "Thrives best under consistent, filtered window light. Avoid frequent location moves."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Take a 4-6 inch stem cutting from a branch branch tip with several nodes. Dip the cut base into a rooting hormone powder and insert it directly into moist, warm peat-moss mix."
+    },
+    {
+        "id": "PLN-027",
+        "name": "Nephrolepis Exaltata",
+        "common_names": [
+            "Boston Fern",
+            "Sword Fern"
+        ],
+        "environment": "Indoor/Outdoor",
+        "detailed_description": "A classic, exploding mass of tiny, feather-like arching green fronds that excels in hanging baskets.",
+        "watering_schedule": {
+            "frequency": "Every 3-4 days",
+            "notes": "Requires high moisture. Mist daily or place near a humidifier to avoid crunchy, shedding brown leaves."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Prefers partial shade; direct hot sunlight will instantly burn the delicate fronds."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Propagate by dividing the plant. Gently pull or slice the main root mass apart into halves or quarters during spring, ensuring each new section retains plenty of green fronds."
+    },
+    {
+        "id": "PLN-028",
+        "name": "Ceropegia Woodii",
+        "common_names": [
+            "String of Hearts",
+            "Rosary Vine"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A gorgeous, string-like succulent trailing vine adorned with dainty, fleshy, heart-shaped leaves marbled in dark green and silver.",
+        "watering_schedule": {
+            "frequency": "Every 2 weeks",
+            "notes": "Water carefully. Allow the soil profile to completely dry out before soaking again."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Enjoys a bit of gentle direct morning sun to keep the vine colors vibrant."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Look for the small round potato-like tubers that form along the vines. Press a vine section with a tuber directly onto moist soil, keeping it attached to the mother plant until new roots take hold."
+    },
+    {
+        "id": "PLN-029",
+        "name": "Ficus Benjamina",
+        "common_names": [
+            "Weeping Fig",
+            "Benjamin Fig"
+        ],
+        "environment": "Indoor/Outdoor",
+        "detailed_description": "An elegant indoor tree displaying a slender grey trunk and a dense canopy of glossy, teardrop-tipped green leaves.",
+        "watering_schedule": {
+            "frequency": "Every 1 week",
+            "notes": "Keep soil moderately moist. Known to dramatically drop leaves if overwatered or exposed to cold drafts."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Requires bright rooms. Avoid moving it around, as it drops foliage in response to environmental changes."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": true,
+            "toxic_to_dogs": true
+        },
+        "clipping_guide": "Cut a 6-inch branch tip that has semi-hardened wood. Put the cutting in a container of water in a warm spot, replacing the water weekly until strong roots develop."
+    },
+    {
+        "id": "PLN-030",
+        "name": "Schlumbergera",
+        "common_names": [
+            "Christmas Cactus",
+            "Holiday Cactus"
+        ],
+        "environment": "Indoor",
+        "detailed_description": "A unique, flat-segmented tropical cactus that lacks spines and produces spectacular, tubular exotic blooms in dead winter.",
+        "watering_schedule": {
+            "frequency": "Every 1-2 weeks",
+            "notes": "Unlike desert cacti, it is a jungle plant and prefers regular water whenever the top layer of soil dries."
+        },
+        "light_requirements": {
+            "intensity": "Bright indirect light",
+            "notes": "Needs cooler nighttime temperatures and dark autumn nights to trigger winter bud development."
+        },
+        "pet_hazards": {
+            "toxic_to_cats": false,
+            "toxic_to_dogs": false
+        },
+        "clipping_guide": "Gently twist off a section of stem containing 2 to 3 flat green segments. Let the broken end dry out for 2 days to callous, then press it upright into moist potting mix."
+    }
+]
